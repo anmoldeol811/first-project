@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script> 
+  $(function(){
+  $("#datepicker").datepicker();
+  });
+  </script>
+  <script>
+$(document).ready(function(){
+
+  
+	$("#fadeOut").click(function(){
+        $("div").fadeOut({left: '256px',background: '#000000'});
+		
+    });
+	 $("#fadeIn").click(function(){
+        $("div").fadeIn({left: '256px',background: '#000000'});
+		
+    }); 
+   
+	$("#slideUp").click(function(){
+        $("p1").slideUp({left: '256px',background: '#000000'});
+		
+    });
+	    $("#slideDown").click(function(){
+        $("p1").slideDown({left: '256px',background: '#000000'});
+    });
+
+	
+	
+	
+	$("#toggle").click(function(){
+        $("p").toggle();
+    });
+});
+
+</script>
+</head>
+<body>
+<button id="fadeOut">fadeOut</button>
+<button id="fadeIn">fadeIn</button>
+<button id="slideUp">slideUp</button>
+<button id="slideDown">slideDown</button>
+<button id="toggle">toggle</button>
+
+<p>Name: Anmolpreet Kaur </p>
+<p1> ID: 727060</p1>
+<p> current course : computer programmer </p>
+<div style="background:#000000;height:120px;width:120px;position:absolute;"></div>
+</body>
+</html>
